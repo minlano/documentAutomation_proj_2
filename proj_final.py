@@ -24,12 +24,7 @@ SENDER_PASSWORD = os.getenv("GMAIL_APP_PASSWORD")
 API_KEY = os.getenv("API_KEY")
 
 # =========================
-# 1. API KEY (공통)
-# =========================
-# API_KEY = "SpBjtAWYaN2aNqknzNlYA4wmB0Amo1IcAM8cNfrU5NAk8nuKEtNGw5dNf6MtkVwliAuKWek+4YG8zjq+osj2og=="
-
-# =========================
-# 2. 데이터 수집/가공 클래스
+# 1. 데이터 수집/가공 클래스
 # =========================
 FONT_PATHS = [
     "C:/Windows/Fonts/malgun.ttf",
@@ -291,7 +286,7 @@ class AirQualityReporter:
             smtp.send_message(msg)
 
 # =========================
-# 3. Streamlit UI
+# 2. Streamlit UI
 # =========================
 def main():
     st.set_page_config(page_title="미세먼지 통합 리포트", layout="wide")
